@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddfc8654f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Software Engineer</p> -->
+                <h1>Hi, This is <span>Manoj Kumar</span></h1><br>
+                <h2 class="typing-text">Welcome to my Portfolio</h2><br>
+                <button class="scroll-btn" onclick="location.href='#portfolio'">Projects</button>
+            </div>
+        </div>
+    </div>
+    <!-----------------------ABOUT-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1"> -->
+                    <!-- <img src="images/user.png"> -->
+                <!-- </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Currently pursuing a Bachelors Degree at SRM AP , 
+                        I have honed my skills through internships at Pine Labs (Frontend Developer & Data Science Intern) 
+                        and AWS. I am a passionate and results-driven Software Developer with experience in full-stack development, 
+                        cloud computing, and data science.
+                    </p>
+                    <div class="forspace">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python , C++ </li>
+                                <li><span>Web Development</span><br>React , JavaScript , Node JS , BootStrap </li>
+                                <li><span>Cloud Services</span><br>AWS , Docker , Kubernetes</li>
+                                <li><span>DataBases</span><br>SQL , MongoDB </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jan 2025 - Current</span><br>Frontend Intern at SETU by PineLabs</li>
+                                <li><span>Sept 2024 - Jan 2025</span><br>DataScience Intern at SETU by PineLabs</li>
+                                <li><span>March 2024 - June 2024</span><br>Salesforce Developer Virtual Internship</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Btech CSE at SRM University AP (CGPA: 8.61/10)</li>
+                                <li><span>2019 - 2021</span><br>Class 12th BIEAP (Percentage: 97.8/100)</li>
+                                <li><span>2014 - 2019</span><br>Class 10th BSEAP (CGPA: 10/10)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- service---------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title" id="Experience">My Work Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer and DataScience</h2>
+                    <p>Currently doing 10 months internship in SETU by Pine Labs .Developing and optimizing responsive user interfaces using React.js, ensuring seamless user experience.
+                    Analyzed and categorized large datasets using Python (Pandas) to enhance data annotation and processing efficiency.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>AWS - Amazon Web Services</h2>
+                    <p>Completed a 2-month internship at APSSDC on AmazonWebServices, gaining hands-on experience with various AWS ser- vices. Contributed to the development of a robust and user-friendly 
+                        ”Cloud File Management Web Application” leveraging the power of AWS.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-salesforce"></i>
+                    <h2>Salesforce Developer Virtual Internship</h2>
+                    <p>Completed a 2-month internship at Smart Bridge (Salesforce Partner),gaining hands-on experience 
+                    with various Salesforce Platform services.And completed a project titled ”A CRM Application to Manage 
+                    the Services Offered by an Institution”. It enables students to register easily and schedule consultations with experts.
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/resized_filebox.png">
+                    <div class="layer">
+                        <h3>FileBox</h3>
+                        <p>A cloud-based files management web application utilizing Amazon Web Services (AWS). 
+                        The application allows users to securely log in, upload, and perform Create, Read, Download, 
+                        and Delete operations on files anywhere with an internet connection.</p>
+                        <a href="https://github.com/manoj-472/Filebox-AWS"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/quizwizzphoto.webp">
+                    <div class="layer">
+                        <h3>Quizwizz - Connect</h3>
+                        <p>Using the MERN Stack, we developed a solution that revolutionized the quiz 
+                        experience by modernizing traditional peer-to-peer methods. The result is a fast, 
+                        responsive, and seamless user interface. We implemented features for quiz creation, 
+                        joining quizzes, and displaying leaderboards.</p>
+                        <a href="https://github.com/manoj-472/Quizzwizz-Connect"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/resized_quiettime.png">
+                    <div class="layer">
+                        <h3>Quiet Time App</h3>
+                        <p>Developed an Android application that automates the silent mode 
+                        functionality of mobile devices based on various triggers, including 
+                        scheduling, public place recognition, geo fencing, and network connection.</p>
+                        <a href="https://github.com/manoj-472/Quiettime-App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!--------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manojkumarmylapalli@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6281222833</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/manoj-kumar-mylapalli/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/manoj-472/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/manojkumar_23/"><i class="fa-solid fa-code"></i></a>
+                        <!-- <a href="https://www.instagram.com/manojkumar__23/"><i class="fa-brands fa-square-instagram"></i></a> -->
+                    </div>
+                    <a href="images/sde_resume.pdf" download="" class ="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks =  document.getElementsByClassName("tab-links");
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+ 
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_lqqbm31vBHZ-S_35rDrXV1iaTj_5ZkUTHnWbNuVXq_21JVVK8X0mnyBURoEmWWF1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
